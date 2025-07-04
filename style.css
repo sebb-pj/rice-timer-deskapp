@@ -54,6 +54,12 @@ body {
   margin-right: auto;
 }
 
+.menu-background {
+  background-image: url(backgroundheart.png);
+  background-position: center;
+  opacity: 0.5;
+}
+
 .menu {
   display: grid; 
   grid-template-columns: 2fr 2fr;
@@ -65,7 +71,7 @@ body {
   height: 150px;
   margin: 20px auto;
   padding: 12px 24px;
-  background: var(--yellow);
+  background: transparent;
   border-radius: 2px;
   border: 5px solid #fff;
   color: black;
