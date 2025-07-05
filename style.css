@@ -56,7 +56,7 @@ body {
 }
 
 .menu-background {
-  background-image: url(backgroundheart.png);
+  background-image: url(assets/backgrounds/backgroundheart.png);
   background-position: center;
   position: absolute;
   top: 0;
