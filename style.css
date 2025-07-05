@@ -52,20 +52,28 @@ body {
   background-color: var(--lightpink);
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .menu-background {
-  background-image: url(backgroundheart.png);
+  background-image: url(assets/backgrounds/backgroundheart.png);
   background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  right: 0;
   opacity: 0.5;
 }
 
 .menu {
   display: grid; 
   grid-template-columns: 2fr 2fr;
+  opacity: 1;
 }
 
 .menu-btn {
+  opacity: 1;
   display: block;
   width: 150px;
   height: 150px;
@@ -77,4 +85,5 @@ body {
   color: black;
   cursor: pointer;
   font-size: 14px;
+  z-index: 10;
 }

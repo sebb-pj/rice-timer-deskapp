@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
   <div id="titlebar">
     <span>Rice timer</span>
     <div>
@@ -14,18 +15,24 @@
       <button class="win-btn" id="close-btn">×</button>
     </div>
   </div>
-  <div class="menu-container">
+
+  <div id="menu-screen" class="menu-container">
     <div class="menu-background">
-      <div class="menu">
-        <button class="menu-btn">White Rice</button>
-        <button class="menu-btn">Brown Rice</button>
-        <button class="menu-btn">Options</button>
-        <button class="menu-btn">Credits</button>
-      </div>
     </div>
-    
+    <div class="menu">
+      <button id="white-rice-btn" class="menu-btn"><p>White Rice</p></button>
+      <button id="brown-rice-btn" class="menu-btn"><p>Brown Rice</p></button>
+      <button id="options-btn" class="menu-btn"><p>Options</p></button>
+      <button id="credits-btn" class="menu-btn"><p>Credits</p></button>
+     </div>
   </div>
   
+  <div id="cooking-screen" style="display: none;">
+    <div class="cooking-area">
+      <div id="rice-sprite">🍙</div>
+      <p>Cooking... <span id="timer">10</span>s left</p>
+    </div>
+  </div>
 
   <script src="renderer.js"></script>
 </body>
