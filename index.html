@@ -11,7 +11,7 @@
     <span>Rice timer</span>
     <div>
       <button class="win-btn" id="min-btn">–</button>
-      <button class="win-btn" id="max-btn">□</button>
+      <button class="win-btn" style="display: none;" id="max-btn">□</button>
       <button class="win-btn" id="close-btn">×</button>
     </div>
   </div>
@@ -19,20 +19,24 @@
   <div id="menu-screen" class="menu-container">
     <div class="menu-background">
     </div>
-    <div class="menu">
+
+    <div id="menu" class="menu">
       <button id="white-rice-btn" class="menu-btn"><p>White Rice</p></button>
       <button id="brown-rice-btn" class="menu-btn"><p>Brown Rice</p></button>
       <button id="options-btn" class="menu-btn"><p>Options</p></button>
       <button id="credits-btn" class="menu-btn"><p>Credits</p></button>
-     </div>
+    </div>
+    
+    <div id="cooking-screen" class="cooking-screen" style="display: none;">
+      <div class="cooking-area">
+        <img src="assets/sprites/whiterice1.png" alt="White Rice" id="rice-sprite">
+        <p id="cooking-status">Cooking... <span id="timer">10</span>s left</p>
+      </div>
+    </div>
+
   </div>
   
-  <div id="cooking-screen" style="display: none;">
-    <div class="cooking-area">
-      <div id="rice-sprite"><img src="assets/sprites/whiterice1.png"></div>
-      <p>Cooking... <span id="timer">10</span>s left</p>
-    </div>
-  </div>
+  
 
   <script src="renderer.js"></script>
 </body>
