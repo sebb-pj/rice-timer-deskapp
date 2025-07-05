@@ -21,16 +21,17 @@
     </div>
 
     <div id="menu" class="menu">
-      <button id="white-rice-btn" class="menu-btn"><p>White Rice</p></button>
-      <button id="brown-rice-btn" class="menu-btn"><p>Brown Rice</p></button>
-      <button id="options-btn" class="menu-btn"><p>Options</p></button>
-      <button id="credits-btn" class="menu-btn"><p>Credits</p></button>
+      <button class="menu-btn"><p id="white-rice-btn">White Rice</p></button>
+      <button class="menu-btn"><p id="brown-rice-btn">Brown Rice</p></button>
+      <button class="menu-btn"><p id="options-btn">Options</p></button>
+      <button class="menu-btn"><p id="credits-btn">Credits</p></button>
     </div>
     
     <div id="cooking-screen" class="cooking-screen" style="display: none;">
       <div class="cooking-area">
         <img src="assets/sprites/whiterice1.png" alt="White Rice" id="rice-sprite">
         <p id="cooking-status">Cooking... <span id="timer">10</span>s left</p>
+        <button style="display: none;" id="back-btn">Back</button>
       </div>
     </div>
 
