@@ -10,6 +10,11 @@ document.getElementById('close-btn').addEventListener('click', () => {
   window.electronAPI.close();
 });
 
+document.getElementById('back-btn').addEventListener('click', () => {
+  document.getElementById('menu').style.display = 'grid';
+  document.getElementById('cooking-screen').style.display = 'none';
+});
+
 document.getElementById('white-rice-btn').addEventListener('click', () => {
   document.getElementById('menu').style.display = 'none';
   document.getElementById('cooking-screen').style.display = 'flex';
@@ -33,6 +38,7 @@ document.getElementById('white-rice-btn').addEventListener('click', () => {
   let time = 10;
   const timerDisplay = document.getElementById('timer');
   const cookingStatus = document.getElementById('cooking-status');
+  const backBtn = document.getElementById('back-btn');
 
   const countdown = setInterval(() => {
     time--;
@@ -41,6 +47,7 @@ document.getElementById('white-rice-btn').addEventListener('click', () => {
       clearInterval(countdown);
       clearInterval(riceAnim);
       cookingStatus.textContent = "Done!";
+      backBtn.style.display = 'block';
     }
   }, 1000);
 });
