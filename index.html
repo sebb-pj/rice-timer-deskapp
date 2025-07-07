@@ -21,17 +21,26 @@
     </div>
 
     <div id="menu" class="menu">
-      <button class="menu-btn"><p id="white-rice-btn">White Rice</p></button>
+      <button class="menu-btn"><p id="pre-white-rice-btn">White Rice</p></button>
       <button class="menu-btn"><p id="brown-rice-btn">Brown Rice</p></button>
       <button class="menu-btn"><p id="options-btn">Options</p></button>
       <button class="menu-btn"><p id="credits-btn">Credits</p></button>
+    </div>
+
+    <div id="pre-cooking-screen" class="cooking-screen" style="display: none;">
+      <div class="cooking-area">
+        <p>Please make sure your rice is washed and the water is boiling before adding the rice!</p>
+        <img src="assets/sprites/whiterice1.png" alt="White Rice">
+        <button class="cooking-btn" id="white-rice-btn">Rice added!</button>
+      </div>
     </div>
     
     <div id="cooking-screen" class="cooking-screen" style="display: none;">
       <div class="cooking-area">
         <img src="assets/sprites/whiterice1.png" alt="White Rice" id="rice-sprite">
-        <p id="cooking-status">Cooking... <span id="timer">10</span>s left</p>
-        <button style="display: none;" id="back-btn">Back</button>
+        <p id="cooking-status">Cooking... </p>
+        <p><span id="timer">10</span>s left</p>
+        <button class="cooking-btn" style="display: none;" id="back-btn">Back</button>
       </div>
     </div>
 

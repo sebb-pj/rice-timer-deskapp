@@ -15,8 +15,13 @@ document.getElementById('back-btn').addEventListener('click', () => {
   document.getElementById('cooking-screen').style.display = 'none';
 });
 
-document.getElementById('white-rice-btn').addEventListener('click', () => {
+document.getElementById('pre-white-rice-btn').addEventListener('click', () => {
   document.getElementById('menu').style.display = 'none';
+  document.getElementById('pre-cooking-screen').style.display = 'flex';
+});
+
+document.getElementById('white-rice-btn').addEventListener('click', () => {
+  document.getElementById('pre-cooking-screen').style.display = 'none';
   document.getElementById('cooking-screen').style.display = 'flex';
 
   let riceFrame = 0;
