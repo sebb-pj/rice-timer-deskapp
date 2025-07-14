@@ -30,7 +30,7 @@
     <div id="pre-cooking-screen" class="cooking-screen" style="display: none;">
       <div class="cooking-area">
         <p>Please make sure your rice is washed and the water is boiling before adding the rice!</p>
-        <img src="assets/sprites/whiterice1.png" alt="White Rice">
+        <img src="assets/sprites/boilingpot1.png" alt="White Rice" id="pot-sprite">
         <button class="cooking-btn" id="white-rice-btn">Rice added!</button>
       </div>
     </div>
@@ -39,8 +39,8 @@
       <div class="cooking-area">
         <img src="assets/sprites/whiterice1.png" alt="White Rice" id="rice-sprite">
         <p id="cooking-status">Cooking... </p>
-        <p><span id="timer">10</span>s left</p>
-        <button class="cooking-btn" style="display: none;" id="back-btn">Back</button>
+        <p><span id="timer"></span>s left</p>
+        <button class="cooking-btn" style="visibility: hidden;" id="back-btn">Back</button>
       </div>
     </div>
 
