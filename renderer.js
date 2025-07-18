@@ -143,3 +143,12 @@ document.getElementById('brown-rice-btn').addEventListener('click', () => {
   });
 });
 
+const bgMusic = new Audio('assets/sounds/ricesong.wav');
+bgMusic.loop = true;
+bgMusic.volume = 0.2;
+
+bgMusic.play().catch(() => {
+  document.addEventListener('click', () => {
+    bgMusic.play();
+  }, { once: true });
+});
